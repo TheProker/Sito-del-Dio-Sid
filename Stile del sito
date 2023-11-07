@@ -1,0 +1,34 @@
+body {
+    font-family: Arial,  sans-serif; /* La famiglia del font */
+    font-size: 13px; /* La dimensione del font principale nei tag <p></p> */
+    background-color: rgb(0, 0, 0); /* Il colore dello sfondo della pagina web */
+    color: rgb(255, 255, 255); /* Il colore del testo */ 
+    border: rgb(13, 89, 100)
+}
+h1 {
+    color: #00a800; /* Il colore dell'intestazione */
+    font-size: 24px; /* La dimensione del font dell'intestazione */
+    font-family: Georgia, serif; /* La famiglia del font usata nell'intestazione */
+}
+
+@keyframes color-change {
+    0% {
+        color: rgb(0,0,255)
+    }    
+    25% {
+        color: rgb(0, 255, 255);
+    }
+    50% {
+        color: rgb(0,255,0)
+    }
+    75% {
+        color: rgb(255, 255, 0);
+    }
+    100% {
+        color: rgb(255, 0, 0)
+    }
+}
+
+h1:hover {
+    animation: color-change 3s infinite;
+}
